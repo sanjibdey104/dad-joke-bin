@@ -1,0 +1,115 @@
+@media screen and (min-width: 1024px) {
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        gap: 3rem;
+
+        header {
+            h2{
+                margin: 0;
+                font-size: 2rem;
+            }
+
+            .logo-container {
+                height: 4.5rem;
+                width: 4.5rem;
+                position: absolute;
+                top: 0;
+                left: -3.75rem;
+            }
+        }
+
+        .navbar {
+            width: 3rem;
+            padding: 1rem 0;
+            height: 15rem;
+
+            transform: translateY(0);
+            transform-origin: bottom;
+    
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+
+            display: grid;
+            place-content: center;
+            gap: 2rem;
+
+            &.show {
+                transform: rotate(0);
+            }
+
+            .fas, .fab {
+                font-size: 1.3rem;
+            }
+            
+            .navbar-toggle-btn {  
+                display: none;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                
+                li {
+                    font-size: 1.3rem;
+                    color: $primary-color;
+                    cursor: pointer;
+
+                    &:hover, &:hover a {
+                        color: $primary-light;
+                    }
+                }
+            }
+        }
+
+        .attribution {
+            position: absolute;
+            left: 2.5rem;
+            top: 50%;
+            height: fit-content;
+            transform: translateX(-50%) rotate(-90deg)  ;
+            transform-origin: center;
+
+
+            line-height: 1;
+            font-size: 0.75rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: $bg-light;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+
+            a {
+                color: $primary-color;
+                font-weight: 500;
+                font-size: 0.85rem;
+            }
+        }
+
+        .joke-card {
+            margin-bottom: 0;
+            width: 16rem;
+            height: 18rem;
+        }
+    
+        .card {
+            background-color: $bg-light;
+        }
+    
+        .card-control {
+            flex-direction: row;
+            gap: 2rem;
+            
+            .fetch-joke-btn, .copy-joke-btn {       
+                font-size: 0.9rem;
+                &:hover, &:focus {
+                    background-color: $primary-light;
+                }
+            }
+        
+        }
+    }
+}

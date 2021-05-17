@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+
+    .container {
+        display: grid;
+        place-content: center;
+
+        .attribution {
+            padding: 0.3rem;
+        }
+    }
+}

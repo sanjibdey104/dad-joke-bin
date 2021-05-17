@@ -1,0 +1,29 @@
+header {
+    max-width: 90%;
+    position: relative;
+
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 2rem;
+        margin-bottom: 4rem;
+        display: inline-block;
+
+        background-color: $primary-color;
+        color: transparent;
+        text-shadow: 2px 2px 3px hsla(0, 0%, 100%, 0.5);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+    }
+
+    .logo-container {
+        height: 4.5rem;
+        width: 4.5rem;
+        position: absolute;
+        top: 2rem;
+        left: -1rem;
+        background-image: url('../images/feel-like-a-sir.png');
+        background-size: contain;
+    }
+}

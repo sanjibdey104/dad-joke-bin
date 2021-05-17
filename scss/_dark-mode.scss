@@ -1,0 +1,78 @@
+.container {
+
+    &.night-mode {
+        background-color: $bg-dark;
+
+        header {
+            h2{
+                color: $bg-light;
+                text-shadow: none;
+            }
+        }
+
+        .navbar, .card-face, .card-control button, .attribution {
+            background-color: $bg-dark;
+            box-shadow: $box-shadow-dark;
+            color: $text-light;
+        }
+
+        .card {
+            background-color: inherit;
+        }
+
+        .navbar { 
+            
+            li a, span {
+                color: $text-light;
+            }
+
+            .nav-list {
+                .fa-sun {
+                        display: block;
+                }
+        
+                .fa-moon {
+                        display: none;
+                }
+            }
+                
+            .navbar-toggle-btn {
+                background-color: $bg-light;
+                color: $text-dark;
+    
+                &:hover, &:focus {
+                    background-color: $accent-color;
+                }
+            }
+        }
+
+        .attribution {
+            a {
+                color: $accent-color;
+            }
+        }
+
+        .card {
+            .card-face {
+                color: $text-light;
+            }
+
+            .card-back {
+                color: $text-light;
+            }
+        }
+
+        .card-control {
+            .fetch-joke-btn, .copy-joke-btn {
+                box-shadow: 0 0 5px $base-black;
+                color: $bg-light;
+            }
+            .copy-joke-btn::after {
+                color: $text-light;
+            } 
+        }
+    }
+
+}
+
+

@@ -1,0 +1,37 @@
+.card-control {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+
+    .fetch-joke-btn, .copy-joke-btn {
+        outline: none;
+        background-color: $primary-color;
+        color: $text-light;
+        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        
+        &:focus {
+            background-color: $primary-light;
+        }
+    }
+
+    .copy-joke-btn {
+        position: relative;
+
+        &.confirm {
+            &::after {
+                content: "joke copied";
+                position: absolute;
+                color: $text-dark;
+                font-size: 0.75rem;
+                width: 3rem;
+                top: 0;
+                right: -4rem;
+            }
+        }
+    }
+
+}
